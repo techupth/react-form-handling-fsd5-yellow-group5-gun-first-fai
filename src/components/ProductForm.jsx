@@ -10,10 +10,9 @@ function ProductForm() {
     event.preventDefault();
   };
   function displayInfo() {
-    alert(`Name: ${name}`);
-    alert(`Image Url: ${imageUrl}`);
-    alert(`Price: ${price}`);
-    alert(`Description: ${description}`);
+    alert(
+      `Name: ${name} Image Url: ${imageUrl} Price: ${price} Description: ${description}`
+    );
   }
 
   return (

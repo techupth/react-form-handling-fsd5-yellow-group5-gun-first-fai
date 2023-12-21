@@ -8,12 +8,13 @@ function ProductForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-  };
-  function displayInfo() {
     alert(
-      `Name: ${name} Image Url: ${imageUrl} Price: ${price} Description: ${description}`
+      `       Name: ${name},
+       Image Url: ${imageUrl},
+       Price: ${price}, 
+       Description: ${description}`
     );
-  }
+  };
 
   return (
     <form className="post-form" onSubmit={handleSubmit}>
@@ -81,9 +82,7 @@ function ProductForm() {
         </label>
       </div>
       <div className="form-actions">
-        <button type="submit" onClick={displayInfo}>
-          Create
-        </button>
+        <button type="submit">Create</button>
       </div>
     </form>
   );
